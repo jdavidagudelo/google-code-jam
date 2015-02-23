@@ -3,11 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package com.google.code.jam;
 
-import com.google.code.jam.juan.allyourbase.AllYourBase;
-import static com.google.code.jam.juan.allyourbase.AllYourBase.process;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -26,13 +23,13 @@ public class SimpleTemplate {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(new File(outputPath)))) {
                 String line = reader.readLine();
                 while (line != null) {
-                    //Here yopu read and write everything, the reader and write are automatically closed byu java
+                    //Here you read and write everything, the reader and writer are automatically closed by java 7
                 }
             }
-                }
+        }
     }
     public static void main(String args[]) throws FileNotFoundException, IOException {
-        ClassLoader classLoader = AllYourBase.class.getClassLoader();
+        ClassLoader classLoader = SimpleTemplate.class.getClassLoader();
         //change it with your specific resources for each input.
         String fileLarge = classLoader.getResource("com/google/code/jam/juan/allyourbase/large.in").getFile();
         String fileSmall = classLoader.getResource("com/google/code/jam/juan/allyourbase/small.in").getFile();
