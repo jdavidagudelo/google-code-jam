@@ -65,6 +65,7 @@ public class CenterOfMass {
         vz /= N;
         return Math.sqrt((x+vx*t)*(x+vx*t)+(y+vy*t)*(y+vy*t)+(z+vz*t)*(z+vz*t));
     }
+    
     public double getMinTime() {
         double x = 0.0;
         double y = 0.0;
