@@ -5,7 +5,6 @@ package com.google.code.jam.juan.centerofmass;
  * and open the template in the editor.
  */
 
-import static com.google.code.jam.juan.allyourbase.AllYourBase.getMinimumTime;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
